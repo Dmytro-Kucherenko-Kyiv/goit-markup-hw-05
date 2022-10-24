@@ -102,9 +102,20 @@ ul {
   color: var(--accent-color)
 }
 
+.header-link:hover::after,
+.header-link:focus::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin-top: 28px;
+  position: absolute;
+}
+
 .studio:visited,
 .portfolio:visited {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 .word-studio-1 {
@@ -115,9 +126,9 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display:flex;
   color: var(--secondary-text-color);
   gap: 50px;
+  position: relative;
 }
 
 .header-contacts {
@@ -266,6 +277,23 @@ gap: 10px;
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
+}
+
+.projects-item {
+  position: relative;
+}
+
+.projects-card {
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0%;
 }
 
 .team-list {
@@ -454,6 +482,23 @@ margin-bottom: 50px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color); 
+}
+
+.project-item {
+  position: relative;
+}
+
+.about-project {
+  width: 370px;
+  height: 294px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding: 63px 24px;
 }
 
 .project-card:hover,
