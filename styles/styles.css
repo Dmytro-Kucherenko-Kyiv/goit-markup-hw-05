@@ -118,7 +118,7 @@ ul {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  bottom 0;
+  top: 100%;
   position: absolute;
 }
 
