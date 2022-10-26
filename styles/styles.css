@@ -62,7 +62,7 @@ ul {
   list-style: none;
 }
 
-/*-------------------header-------------------*/
+/*-------------------- header --------------------*/
 
 .container {
   width: 1200px;
@@ -83,6 +83,8 @@ ul {
   z-index: 5;
 }
 
+/*---------- header-navigation ----------*/
+
 .header-navigation {
   display: flex;
 }
@@ -98,6 +100,10 @@ ul {
 .header-logo{
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.word-studio-1 {
+  color: var(--secondary-text-color);
 }
 
 .header-list {
@@ -122,7 +128,7 @@ ul {
   color: var(--accent-color);
 }
 
-.current::after,
+.current:after,
 .header-link:hover::after,
 .header-link:focus::after {
   content: '';
@@ -135,9 +141,7 @@ ul {
   position: absolute;
 }
 
-.word-studio-1 {
-  color: var(--secondary-text-color);
-}
+/*---------- header-contacts ----------*/
 
 .header-contacts {
   padding-top: 32px;
@@ -166,7 +170,9 @@ transition: color var(--animation);
   color: var(--accent-color);
 }
 
-/*-------------------hero-------------------*/
+/*-------------------- hero --------------------*/
+
+/*---------- banner ----------*/
 
 .banner {
   background: var(--background-hero-footer);
@@ -219,6 +225,18 @@ transition: color var(--animation);
   transition: background-color var(--animation);
 }
 
+/*---------- hero-list -----------*/
+
+.hero {
+  padding-top: 94px;
+}
+
+.hero-list {
+  height: 248px;
+  display: flex;
+  gap: 30px;
+}
+
 .hero-item {
   width: 270px;
 }
@@ -226,12 +244,6 @@ transition: color var(--animation);
 .hero-item:nth-child(2),
 .hero-item:nth-child(3) {
   height: 224px;
-}
-
-.hero-list {
-  height: 248px;
-  display: flex;
-  gap: 30px;
 }
 
 .hero-icon-box {
@@ -243,9 +255,6 @@ transition: color var(--animation);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-icon {
 }
 
 .hero-title {
@@ -262,9 +271,7 @@ transition: color var(--animation);
   color: var(--primary-text-color);
 }
 
-.hero {
-  padding-top: 94px;
-}
+/*---------- hero-projects -----------*/
 
 .projects,
 .partners {
@@ -306,6 +313,14 @@ transition: color var(--animation);
   color: var(--white-color);
 }
 
+/*---------- hero-team-list -----------*/
+
+.team {
+  background: var(--background-our-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-list {
   display: flex;
   gap: 30px;
@@ -319,22 +334,11 @@ transition: color var(--animation);
   text-align: center;
 }
 
-.team {
-  background: var(--background-our-team);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .description {
   background: var(--white-color);
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
-}
-
-.team-boarder {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -383,6 +387,8 @@ transition: color var(--animation);
   fill: var(--white-color);
 }
 
+/*---------- hero-partners-list -----------*/
+
 .partners-list {
   display: flex;
   gap: 30px;
@@ -404,14 +410,14 @@ transition: color var(--animation);
   transition: border-color var(--animation);
 }
 
-.partners-icon {
-  fill: var(--icon-color);
-  transition: fill var(--animation);
-}
-
 .partners-link:hover,
 .partners-link:focus {
   border-color: var(--accent-color);
+}
+
+.partners-icon {
+  fill: var(--icon-color);
+  transition: fill var(--animation);
 }
 
 .partners-link:hover .partners-icon,
@@ -419,10 +425,17 @@ transition: color var(--animation);
   fill: var(--accent-color);
 }
 
-/*------------------- portfolio -------------------*/
+/*-------------------- portfolio --------------------*/
+
+/*---------- portfolio-filter-list ----------*/
 
 main {
   color: var(--background-our-team);
+}
+
+.project {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .filter-container {
@@ -466,10 +479,7 @@ margin-bottom: 50px;
   text-align: center;
 }
 
-.project {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+/*---------- portfolio-projects-list ----------*/
 
 .project-list {
   display: flex;
@@ -482,9 +492,21 @@ margin-bottom: 50px;
   transform: translateY(0);
 }
 
+.project-card {
+  transition: box-shadow var(--animation);
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+              0px 4px 4px rgba(0, 0, 0, 0.06), 
+              1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-definition {
   position: relative;
   overflow: hidden;
+  transition: opacity var(--animation);
 }
 
 .definition-text {
@@ -522,22 +544,7 @@ margin-bottom: 50px;
   color: var(--primary-text-color); 
 }
 
-.project-definition {
-  transition: opacity var(--animation);
-}
-
-.project-card {
-  transition: box-shadow var(--animation);
-}
-
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-              0px 4px 4px rgba(0, 0, 0, 0.06), 
-              1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/*-------------------footer-------------------*/
+/*-------------------- footer --------------------*/
 
 footer {
   background: var(--background-hero-footer);
@@ -550,17 +557,15 @@ footer {
   align-items: baseline;
 }
 
-.footer-soc-networks {
-  padding-left: 70px;
-}
-
-.word-studio-2 {
-  color: var(--white-color);
-}
+/*---------- footer-logo-contacts ----------*/
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+}
+
+.word-studio-2 {
+  color: var(--white-color);
 }
 
 address{
@@ -570,6 +575,18 @@ address{
 
 .contact-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.adds {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--white-color);
+  transition: color var(--animation);
+}
+
+.adds:hover,
+.adds:focus {
+  color: var(--accent-color);
 }
 
 .footer-contact-link {
@@ -585,19 +602,10 @@ address{
   color: var(--accent-color);
 }
 
-.adds {
-  font-style: normal;
-  line-height: 1.71;
-  color: var(--white-color);
-  transition: color var(--animation);
-}
-
-.adds:hover,
-.adds:focus {
-  color: var(--accent-color);
-}
+/*---------- footer-soc-networks ----------*/
 
 .footer-soc-networks {
+  padding-left: 70px;
 }
 
 .footer-soc-title {
@@ -637,6 +645,8 @@ margin-bottom: 20px;
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
+
+/*---------- modal ----------*/
 
 .backdrop {
   height: 100%;
