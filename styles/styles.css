@@ -128,9 +128,7 @@ ul {
   color: var(--accent-color);
 }
 
-.current:after,
-.header-link:hover::after,
-.header-link:focus::after {
+.current:after {
   content: '';
   display: block;
   width: 100%;
